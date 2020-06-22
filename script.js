@@ -1,9 +1,4 @@
 
-$('#search-button').click(function(){
-    getResults();
-});
-
-getResults();
 function getResults(){
     var userSearchTerm = $("#search-term").val();
     var numInput = parseInt($("#record-num"));
@@ -37,3 +32,11 @@ function getResults(){
         }
     });
 }
+
+$('#search-button').click(function(){
+    getResults();
+});
+
+$('#clear-button').click(function(){
+    $('#search-results').empty();
+})
