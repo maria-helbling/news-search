@@ -17,7 +17,7 @@ function getResults(){
         url: queryURL,
         method: "GET"
     }).then(function(result){
-        $('#result-div').empty();
+        $('#search-results').empty();
         for (let i=0; i<numInput; i++) {
             console.log(i)
             //grab results from API
