@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 $('#search-button').click(function(){
     var startYear = parseInt($("#start-year")) + "0101";
     var endYear = parseInt($("#end-year")) + "0101";
@@ -41,6 +42,8 @@ if (startYear === "" && endYear === ""){
 });
 
 getResults();
+=======
+>>>>>>> Dev
 function getResults(){
     var userSearchTerm = $("#search-term").val();
     var numInput = parseInt($("#record-num"));
@@ -75,4 +78,14 @@ function getResults(){
     });
 }
 
+<<<<<<< HEAD
 
+=======
+$('#search-button').click(function(){
+    getResults();
+});
+
+$('#clear-button').click(function(){
+    $('#search-results').empty();
+})
+>>>>>>> Dev
